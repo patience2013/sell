@@ -1,0 +1,49 @@
+spring:
+  jackson:
+    default-property-inclusion: non_null
+#    date-format: yyyy-MM-dd HH:mm:ss
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/sell?useUnicode=true&characterEncoding=utf8&useSSL=false
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        enable_lazy_load_no_trans: true
+  redis:
+    host: 192.168.0.118
+    port: 6379
+server:
+  servlet:
+    context-path: /sell
+#logging:
+#  pattern:
+#    console: "%d - %msg%n"
+##  path: /var/log/tomcat/
+##  file: /var/log/tomcat/sell.log
+##    file: E:\\javaJump\sell\sell.log
+##    logging.path=F:\\demo
+##    logging.file=demo.log
+##    logging.level.root=info
+#  file: E:\\javaJump\sell\log\sell
+#  level: debug
+##  file: sell.log
+##  level: info
+wechat:
+  mpAppId: wx6b4085c885606d2f
+  mpAppSecret: 2230e10d8488d8367db8ad97e66658a5
+  openAppId: wx6b4085c885606d2f
+  openAppSecret: 2230e10d8488d8367db8ad97e66658a5
+  mchId: 1409146202
+  mchKey: 29d8a650db31472aa87800e3b0d739f2
+  keyPath: d:/fewf
+  notifyUrl: http://e22st2.natappfree.cc/sell/pay/notify
+#  keyPath: 微信平台下载下来的
+
+projecturl:
+  wechatMpAuthorize: http://e22st2.natappfree.cc
+  wechatOpenAuthorize: http://e22st2.natappfree.cc
+  sell:
+
